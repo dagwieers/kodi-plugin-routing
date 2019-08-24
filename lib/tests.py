@@ -110,5 +110,3 @@ def test_trailing_slashes():
     assert UrlRule("/p/<foo>").match("/p/bar/") == {'foo': 'bar'}
     assert UrlRule("/p/<foo>").match("/p/bar//") == {'foo': 'bar'}
     assert UrlRule("/p/<foo>").match("/p/bar///") == {'foo': 'bar'}
-
-
